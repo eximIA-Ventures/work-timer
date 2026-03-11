@@ -6,5 +6,6 @@ build/
 next-env.d.ts
 .env.local
 .env*.local
+*.bak
 data/sessions.json
 supabase/.temp/
