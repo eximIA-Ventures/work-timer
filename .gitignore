@@ -1,0 +1,10 @@
+.next/
+node_modules/
+out/
+build/
+*.tsbuildinfo
+next-env.d.ts
+.env.local
+.env*.local
+data/sessions.json
+supabase/.temp/

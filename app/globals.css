@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --c-bg: 10 10 10;
+  --c-surface: 17 17 17;
+  --c-elevated: 26 26 26;
+  --c-border: 42 42 42;
+  --c-primary: 232 224 213;
+  --c-accent: 196 168 130;
+  --c-muted: 102 102 102;
+
+  --bg: #0A0A0A;
+  --surface: #111111;
+  --elevated: #1A1A1A;
+  --border: #2A2A2A;
+  --primary: #E8E0D5;
+  --accent: #C4A882;
+  --muted: #666666;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--primary);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+/* Prevent pull-to-refresh on mobile */
+html, body {
+  overscroll-behavior-y: contain;
+}
+
+/* Pulsing animation for running state */
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 0.3; }
+  100% { transform: scale(1.05); opacity: 0; }
+}
